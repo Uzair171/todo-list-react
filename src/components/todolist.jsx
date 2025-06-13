@@ -9,6 +9,7 @@ export default function TodoList(props) {
 
         <h3>Available Tasks</h3>
         <ul>
+            {/* function to map over the values of the list*/}
           {props.todos.length > 0 ? (
             props.todos.map((element) => (
                 <li key={element.id}>

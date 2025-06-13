@@ -139,7 +139,7 @@ li button:hover {
   background: #c0392b;
 }
 
-/* ---------- Custom Checkbox Styling ---------- */
+
 li input[type="checkbox"] {
   appearance: none;
   width: 18px;
@@ -178,7 +178,7 @@ li input[type="checkbox"]:checked::after {
   padding: 12px 20px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(to right, #232526, #414345); /* Dark gray gradient */
+  background: linear-gradient(to right, #232526, #414345); 
   color: #f1f1f1;
   font-weight: 600;
   cursor: pointer;
@@ -187,6 +187,6 @@ li input[type="checkbox"]:checked::after {
 
 .todo-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1); /* soft light shadow */
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1); 
 }
 
