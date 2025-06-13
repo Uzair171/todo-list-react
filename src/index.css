@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+
+main {
+  background: rgba(40, 40, 40, 0.7);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  width: 95%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+h2{
+    text-align: center;
+    color: #aaa;
+    font-size: 2.5rem;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #f0f0f0;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"]:focus {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 75, 43, 0.3);
+}
+
+
+
+
+section > section h4 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+li input[type="checkbox"] {
+  transform: scale(1.3);
+  accent-color: #3fa9f5;
+  cursor: pointer;
+}
+
+li span {
+  flex-grow: 1;
+  color: #f1f1f1;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+li span.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: #888;
+}
+
+
+li button {
+  background: #e74c3c;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+li button:hover {
+  background: #c0392b;
+}
+
+/* ---------- Custom Checkbox Styling ---------- */
+li input[type="checkbox"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3fa9f5;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+li input[type="checkbox"]:hover {
+  background-color: rgba(63, 169, 245, 0.1);
+}
+
+li input[type="checkbox"]:checked {
+  background-color: #3fa9f5;
+  border-color: #3fa9f5;
+}
+
+li input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+.todo-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #232526, #414345); /* Dark gray gradient */
+  color: #f1f1f1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.todo-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1); /* soft light shadow */
+}
+

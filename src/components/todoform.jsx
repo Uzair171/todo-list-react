@@ -26,7 +26,9 @@ export default function TodoForm(props) {
           placeholder="Enter the Task"
           
         />
-        <button type="submit">Add Task</button>
+        <button
+        className="todo-btn"
+        type="submit">Add Task</button>
       </form>
     </section>
   );

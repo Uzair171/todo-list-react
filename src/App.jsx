@@ -43,6 +43,7 @@ export default function App() {
 
   return (
     <main>
+      <h2>To-Do List</h2>
       <TodoForm onSubmit={submitHandler} />
       <TodoList
         todos={tasks}

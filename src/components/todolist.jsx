@@ -9,17 +9,21 @@ export default function TodoList(props) {
 
         <h3>Available Tasks</h3>
         <ul>
-          {props.todos.map((element) => (
-            <li key={element.id}>
-              <input
-                type="checkbox"
-                checked={element.completed}
-                onChange={() => props.toggle(element.id)}
-              />
-              <span>{element.task}</span>
-              <button onClick={() => props.delete(element.id)}>Delete</button>
-            </li>
-          ))}
+          {props.todos.length > 0 ? (
+            props.todos.map((element) => (
+                <li key={element.id}>
+                <input
+                    type="checkbox"
+                    checked={element.completed}
+                    onChange={() => props.toggle(element.id)}
+                />
+                <span>{element.task}</span>
+                <button onClick={() => props.delete(element.id)}>Delete</button>
+                </li>
+            ))
+            ) : (
+            <p style={{ textAlign: "center", opacity: 0.7 }}>No tasks available!</p>
+            )}
         </ul>
       </section>
     </>
